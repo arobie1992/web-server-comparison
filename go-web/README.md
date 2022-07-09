@@ -1,5 +1,9 @@
 executable: web-server
 size: 6.8M
+Instructions:
+1. cd into `go-web` directory
+2. run `go build main.go`
+3. run `./web-server`
 
 Request:
 curl -X POST \

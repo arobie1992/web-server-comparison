@@ -1,5 +1,9 @@
 executable: rust-web
 size: 27M
+Instructions:
+1. cd into `rust-web` directory
+2. run `cargo build`
+3. run `./target/debug/rust-web`
 
 Request:
 curl -X POST \

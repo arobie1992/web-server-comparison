@@ -1,5 +1,7 @@
 executable: {executable name}
 size: {executable size}
+Instructions:
+{steps to build and run the executable}
 
 Request:
 curl -X POST \
