@@ -1,0 +1,21 @@
+[package]
+name = "rust-web"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc.2", features = ["json"]}
+reqwest = { version = "0.11", features = ["blocking"] }
+serde = "1.0.138"
+serde_derive = "1.0.138"
+serde_json = "1.0.82"
+
+[lib]
+name = "rustweb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rust-web"
+path = "src/main.rs"
