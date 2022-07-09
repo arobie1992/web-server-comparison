@@ -1,9 +1,10 @@
 executable: rust-web
 size: 27M
 Instructions:
-1. cd into `rust-web` directory
-2. run `cargo build`
-3. run `./target/debug/rust-web`
+1. Install Rust: https://www.rust-lang.org/tools/install
+2. cd into `rust-web` directory
+3. run `cargo build`
+4. run `./target/debug/rust-web`
 
 Request:
 curl -X POST \
