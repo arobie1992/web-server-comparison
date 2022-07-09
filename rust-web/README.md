@@ -13,3 +13,8 @@ connect:transfer:total
 0.006974:0.008106:0.008320
 0.006972:0.008075:0.008189
 0.007108:0.008123:0.008223
+
+Dependencies:
+https://rocket.rs/v0.5-rc/overview/
+https://docs.rs/reqwest/0.9.18/reqwest/
+https://serde.rs/
