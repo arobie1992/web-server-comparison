@@ -1,0 +1,13 @@
+{
+	"authors": [
+		"Andrew Robie"
+	],
+	"copyright": "Copyright © 2022, Andrew Robie",
+	"dependencies": {
+		"asdf": "~>0.7.15",
+		"vibe-d": "~>0.9"
+	},
+	"description": "A simple vibe.d server application.",
+	"license": "proprietary",
+	"name": "d-web"
+}

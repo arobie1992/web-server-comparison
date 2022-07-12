@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/d-web
+d-web.so
+d-web.dylib
+d-web.dll
+d-web.a
+d-web.lib
+d-web-test-*
+*.exe
+*.o
+*.obj
+*.lst
