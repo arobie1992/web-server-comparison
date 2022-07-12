@@ -16,3 +16,12 @@ connect:transfer:total
 
 Dependencies
 {Any libraries oustide the language's standard features}
+- {dep name}
+    - {url to documentation}
+    - {brief description}
+
+Pros
+- {}
+
+Cons
+- {}

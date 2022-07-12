@@ -21,8 +21,12 @@ connect:transfer:total
 0.007416:0.009627:0.009698
 
 Dependencies
-vibe.d - web server; part of core language
-asdf - json serlialization/deserialization
+- vibe.d
+    - https://code.dlang.org/packages/vibe-d 
+    - web server; part of core language
+- asdf
+    - https://code.dlang.org/packages/asdf 
+    - json serlialization/deserialization
 
 Pros
 - Pretty simple

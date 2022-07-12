@@ -13,8 +13,22 @@ localhost:8081/call \
 -d '{"url": "http://localhost:8080/resp"}' \
 -v -w %{time_connect}:%{time_starttransfer}:%{time_total}\\n
 
+Dependencies
+N/A
+
 Time
 connect:transfer:total
 0.006864:0.009942:0.009996
 0.007616:0.009372:0.009416
 0.007221:0.009173:0.009228
+
+Pros
+- Very small executable
+- Consistent performance
+- No external dependencies
+- Popular language
+
+Cons
+- Very DIY, especially WRT HTTP handling
+- Requires exported fields for JSON
+- Requires annotating all JSON fields
