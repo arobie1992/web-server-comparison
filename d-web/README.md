@@ -33,7 +33,7 @@ Pros
 - Nice support for json
 - Web server library seems to be part of core language
 - Familar syntax
-- Native package manager
+- Native package manager & build system
 
 Cons
 - Unfamiliar language

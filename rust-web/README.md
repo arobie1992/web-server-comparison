@@ -35,6 +35,7 @@ Pros
 - Familiar language to team
 - First-party support for JSON
 - Handles a lot for user
+- Native package manager & build system
 
 Cons
 - Rocket has SPOF in maintainer. Has been somewhat absent recently

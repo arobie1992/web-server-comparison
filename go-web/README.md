@@ -27,6 +27,7 @@ Pros
 - Consistent performance
 - No external dependencies
 - Popular language
+- Native package manager & build system
 
 Cons
 - Very DIY, especially WRT HTTP handling
