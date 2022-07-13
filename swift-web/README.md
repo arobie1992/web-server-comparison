@@ -1,7 +1,11 @@
 executable: ? - static linking that gets bundled in .build folder
 size: ? - doesn't produce single executable
 Instructions:
-{steps to build and run the executable}
+1. Install Swift
+    - Linux & Mac: https://www.swift.org/download/
+    - Windows: https://swiftforwindows.github.io/
+2. cd into `swift-web`
+3. run `swift run`
 
 Request:
 curl -X POST \
@@ -32,4 +36,4 @@ Cons
     - This is due to mac: according to here it should be fine for Linux which is what we want: https://stackoverflow.com/questions/66036826/can-the-swift-compiler-create-a-single-executable-for-my-application
 - Unfamilar language and syntax
 - HTTP requests use async callbacks which may be unfamilar and requires wait group for sync operations
-- Requires WSL for Windows development
+- Windows develeopment support doesn't appear to be the greates (4.x.x on Windows vs 5.x.x on Linux & Mac)
