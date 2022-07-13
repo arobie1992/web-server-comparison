@@ -1,0 +1,5 @@
+(executable
+ (public_name ocamlweb)
+ (name main)
+ (libraries ocamlweb dream cohttp cohttp-lwt-unix)
+ (preprocess (pps lwt_ppx ppx_yojson_conv)))

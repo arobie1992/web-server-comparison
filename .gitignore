@@ -1,3 +1,4 @@
+_build
 .vscode
 go-web/web-server
 rust-web/target
