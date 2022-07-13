@@ -21,7 +21,6 @@ connect:transfer:total
 0.007674:0.009056:0.009119
 
 Dependencies
-{Any libraries oustide the language's standard features}
 - Vapor
     - https://vapor.codes/
     - Web server framework
@@ -36,4 +35,4 @@ Cons
     - This is due to mac: according to here it should be fine for Linux which is what we want: https://stackoverflow.com/questions/66036826/can-the-swift-compiler-create-a-single-executable-for-my-application
 - Unfamilar language and syntax
 - HTTP requests use async callbacks which may be unfamilar and requires wait group for sync operations
-- Windows develeopment support doesn't appear to be the greates (4.x.x on Windows vs 5.x.x on Linux & Mac)
+- Windows develeopment support doesn't appear to be the greatest (4.x.x on Windows vs 5.x.x on Linux & Mac)
