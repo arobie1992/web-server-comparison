@@ -3,6 +3,7 @@ import std.net.curl;
 import std.conv;
 import asdf;
 
+// Interface is required to pass impl to listenHTTP
 interface IRest
 {
     struct Info 
