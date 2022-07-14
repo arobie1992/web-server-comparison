@@ -1,5 +1,5 @@
 executable: rust-web
-size: 19MB
+size: 30MB
 Instructions:
 1. Install Rust: https://www.rust-lang.org/tools/install
 2. cd into `rust-web` directory
@@ -37,5 +37,6 @@ Pros
 - No SPOF (vs Rocket) since it's maintained by the Tokio
 
 Cons
-- 
+- Comparatively slow
+- largest executable
 - Doesn't handle as much as Rocket
