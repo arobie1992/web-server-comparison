@@ -41,4 +41,4 @@ Cons
 - Rocket has SPOF in maintainer. Has been somewhat absent recently
 - Rocket is only release candidate for 0.5
 - Rocket 0.4 requires Rust Nightly
-- Largets executable
+- Largest executable
