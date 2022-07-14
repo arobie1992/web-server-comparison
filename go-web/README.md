@@ -18,13 +18,12 @@ N/A
 
 Time
 connect:transfer:total
-0.006864:0.009942:0.009996
-0.007616:0.009372:0.009416
-0.007221:0.009173:0.009228
+0.009853:0.013956:0.014011
+0.008616:0.010872:0.010929
+0.007296:0.010115:0.010179
 
 Pros
 - Very small executable
-- Consistent performance
 - No external dependencies
 - Popular language
 - Native package manager & build system

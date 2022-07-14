@@ -7,7 +7,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"strings"
 )
 
 func main() {
@@ -18,13 +17,13 @@ func main() {
 }
 
 func handler(writer http.ResponseWriter, req *http.Request) {
-	fmt.Println("Handling request")
 	if req.Method != "POST" {
 		fmt.Printf("Unacceptable method: %s\n", req.Method)
 		http.Error(writer, "Only POST supported", http.StatusMethodNotAllowed)
 		return
 	}
 
+	// Doesn't check for appropriate Content-Type header
 	body := req.Body
 	defer body.Close()
 	bytes, err := readBody(req.Body)
@@ -41,9 +40,17 @@ func handler(writer http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	if err := makeHttpRequest(httpReq.Url); err != nil {
+	info, err := makeHttpRequest(httpReq.Url)
+	if err != nil {
 		http.Error(writer, err.Error(), http.StatusInternalServerError)
 	}
+
+	infoJson, err := json.Marshal(info)
+	if err != nil {
+		http.Error(writer, err.Error(), http.StatusInternalServerError)
+	}
+
+	writer.Write(infoJson)
 }
 
 func readBody(body io.ReadCloser) ([]byte, error) {
@@ -69,38 +76,28 @@ func readBody(body io.ReadCloser) ([]byte, error) {
 	return bytes, nil
 }
 
-type HttpReq struct {
-	Url string `json:"url"`
-}
-
-func makeHttpRequest(url string) error {
+func makeHttpRequest(url string) (*Info, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
-	var info Info = newInfo()
+	var info Info
 	if err = json.Unmarshal(body, &info); err != nil {
-		fmt.Printf("Error: %s\n", err)
-	} else {
-		fmt.Printf("%s\n", info.String())
+		return nil, err
 	}
 
-	return nil
+	return &info, nil
 }
 
-func newInfo() Info {
-	return Info{
-		Id:     0,
-		Status: "",
-		Data:   &Data{Requestors: []string{}},
-	}
+type HttpReq struct {
+	Url string `json:"url"`
 }
 
 type Info struct {
@@ -109,22 +106,6 @@ type Info struct {
 	Data   *Data  `json:"data"`
 }
 
-func (i *Info) String() string {
-	return "{" +
-		`"Id": ` + fmt.Sprintf("%d", i.Id) + ", " +
-		`"Status": "` + i.Status + `"` + ", " +
-		`"Data": ` + i.Data.String() +
-		"}"
-}
-
 type Data struct {
 	Requestors []string `json:"requestors"`
-}
-
-func (d *Data) String() string {
-	formatted := []string{}
-	for _, s := range d.Requestors {
-		formatted = append(formatted, fmt.Sprintf(`"%s"`, s))
-	}
-	return fmt.Sprintf(`{"Requestors": [%s]}`, strings.Join(formatted, ","))
 }
