@@ -2,4 +2,5 @@ _build
 .vscode
 go-web/web-server
 rust-web/target
+rust-web-actix/target
 rust-web-axum/target
