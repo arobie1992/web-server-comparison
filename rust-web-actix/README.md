@@ -37,6 +37,5 @@ Pros
 - No SPOF (vs Rocket) since it's maintained by the Tokio
 
 Cons
-- Comparatively slow
 - largest executable
 - Doesn't handle as much as Rocket

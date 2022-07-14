@@ -40,4 +40,4 @@ Cons
 - Not the best error messages
 - Requires package for JSON support
 - Larger executable
-- Slowest, especially first request
+- Slowest first request time
