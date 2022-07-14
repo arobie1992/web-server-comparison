@@ -1,5 +1,7 @@
 executable: main.exe
-size: 9.6MB - Seems this is dynamically linked on Mac so might not be accurate
+size: 9.6MB 
+    - Seems this is dynamically linked on Mac so might not be accurate
+    - see about statically linking on WSL
 Instructions:
 1. Install OCaml: https://ocaml.org/docs/up-and-running
 2. cd into ocamlweb
