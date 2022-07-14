@@ -37,5 +37,4 @@ Pros
 - No SPOF (vs Rocket) since it's maintained by the Tokio
 
 Cons
-- Comparatively slow
 - Doesn't handle as much as Rocket

@@ -1,8 +1,8 @@
-use rustweb::{routes, catchers};
+use rustweb::routes;
 
 #[macro_use] extern crate rocket;
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes()).register("/", catchers())
+    rocket::build().mount("/", routes())
 }

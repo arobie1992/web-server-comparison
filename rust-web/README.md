@@ -8,16 +8,16 @@ Instructions:
 
 Request:
 curl -X POST \
-localhost:8080/call \
+localhost:8000/call \
 -H "Content-Type: application/json" \
 -d '{"url": "http://localhost:8080/resp"}' \
 -v -w \\n%{time_connect}:%{time_starttransfer}:%{time_total}\\n
 
 Time
 connect:transfer:total
-0.006974:0.008106:0.008320
-0.006972:0.008075:0.008189
-0.007108:0.008123:0.008223
+0.007006:0.016818:0.016918
+0.007268:0.010977:0.011056
+0.007148:0.011557:0.011633
 
 Dependencies:
 - rocket

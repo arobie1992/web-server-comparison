@@ -38,4 +38,6 @@ Pros
 
 Cons
 - largest executable
+- Seem to need to have things be pub so routes can be added in main.rs
+    - Couldn't figure out how to configure this in lib.rs
 - Doesn't handle as much as Rocket
