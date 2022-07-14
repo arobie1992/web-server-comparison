@@ -30,12 +30,12 @@ Dependencies
     - https://serde.rs/
     - JSON serialization/deserialization
 
-Pros (vs Rocket)
+Pros
 - Familiar language to team
 - First-party support for JSON
 - Native package manager & build system
 - No SPOF (vs Rocket) since it's maintained by the Tokio
 
 Cons
-- Slowest
+- Comparatively slow
 - Doesn't handle as much as Rocket
