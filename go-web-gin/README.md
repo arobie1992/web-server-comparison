@@ -1,5 +1,17 @@
 executable: go-web-gin
 size: 10MB
+Runtime Info:
+    - Idle:
+        - CPU time: 0.01
+        - Memory: 4.4MB
+        - Threads: 6
+        - Ports: 16
+    - After 3 requests:
+        - CPU time: 0.02
+        - Memory: 5.7MB
+        - Threads: 9
+        - Ports: 26
+
 Instructions:
 1. install Go: https://go.dev/doc/install
 2. cd into `go-web-gin` directory

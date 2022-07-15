@@ -2,6 +2,18 @@ executable: main.exe
 size: 9.6MB 
     - Seems this is dynamically linked on Mac so might not be accurate
     - see about statically linking on WSL
+Runtime Info:
+    - Idle:
+        - CPU time: 0.08
+        - Memory: 6.2MB
+        - Threads: 2
+        - Ports: 20
+    - After 3 requests:
+        - CPU time: 0.08
+        - Memory: 6.8MB
+        - Threads: 2
+        - Ports: 23
+
 Instructions:
 1. Install OCaml: https://ocaml.org/docs/up-and-running
 2. cd into ocamlweb

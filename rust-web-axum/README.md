@@ -1,5 +1,17 @@
 executable: rust-web
 size: 19MB
+Runtime Info:
+    - Idle:
+        - CPU time: 0.01
+        - Memory: 1,008KB (Yes, really KB)
+        - Threads: 13
+        - Ports: 23
+    - After 3 requests:
+        - CPU time: 0.02
+        - Memory: 1.7MB
+        - Threads: 14
+        - Ports: 32
+
 Instructions:
 1. Install Rust: https://www.rust-lang.org/tools/install
 2. cd into `rust-web` directory

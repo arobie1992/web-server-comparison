@@ -1,5 +1,17 @@
 executable: d-web
 size: 24MB
+Runtime Info:
+    - Idle:
+        - CPU time: 0.12
+        - Memory: 4.2MB
+        - Threads: 3
+        - Ports: 25
+    - Max (from req):
+        - CPU time: 0.14
+        - Memory: 4.7MB
+        - Threads: 3
+        - Ports: 37
+        
 Instructions:
 1. Install D: https://dlang.org/install.html
 2. cd into `d-web`

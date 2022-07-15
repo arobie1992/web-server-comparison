@@ -1,5 +1,17 @@
 executable: ? - static linking that gets bundled in .build folder
 size: ? - doesn't produce single executable
+Runtime Info:
+    - Idle:
+        - CPU time: 1.55
+        - Memory: 2.3MB
+        - Threads: 77
+        - Ports: 103
+    - After 3 requests:
+        - CPU time: 1.62
+        - Memory: 3.9MB
+        - Threads: 83
+        - Ports: 133
+
 Instructions:
 1. Install Swift
     - Linux & Mac: https://www.swift.org/download/

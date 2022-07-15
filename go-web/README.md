@@ -1,5 +1,17 @@
 executable: web-server
 size: 6.8M
+Runtime Info:
+    - Idle:
+        - CPU time: 0.01
+        - Memory: 1.3MB
+        - Threads: 6
+        - Ports: 16
+    - After 3 requests:
+        - CPU time: 0.01
+        - Memory: 1.8MB
+        - Threads: 6
+        - Ports: 23
+
 Instructions:
 1. install Go: https://go.dev/doc/install
 2. cd into `go-web` directory

@@ -1,5 +1,17 @@
 executable: {executable name}
 size: {executable size}
+Runtime Info:
+    - Idle:
+        - CPU time: 
+        - Memory: 
+        - Threads: 
+        - Ports: 
+    - After 3 requests:
+        - CPU time: 
+        - Memory: 
+        - Threads: 
+        - Ports: 
+
 Instructions:
 {steps to build and run the executable}
 
