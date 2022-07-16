@@ -1,6 +1,6 @@
 open Lwt
 (* I think Dream comes packaged with Httpaf (https://github.com/inhabitedtype/httpaf)
-   which is supposed to be able to make HTTP requests but I didn't have much figuring out how to *)
+   which is supposed to be able to make HTTP requests but I didn't have much luck figuring out how to *)
 open Cohttp_lwt_unix
 
 type http_request = { 
